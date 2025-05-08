@@ -2,9 +2,8 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-		baseUrl: 'https://www.eesti.ee/eraisik/et/avaleht',
+		baseUrl: 'https://www.eesti.ee',
+		viewportWidth: 1920,
+		viewportHeight: 1080,
   },
 });
