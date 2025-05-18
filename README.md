@@ -6,10 +6,10 @@ To install dependencies:
 bun install
 ```
 
-To run:
+## Recap of tests
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Cypress was rather simple and easy to understand. Took me some time though to
+notice that Cypress runs in a smaller resolution than 1920x1080 but that was
+an easy fix. It's clear that eesti.ee has tests written for it by the
+developers already (HTML tags are custom) and that made the testing easier
+for me as well.
