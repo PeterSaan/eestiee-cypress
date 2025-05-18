@@ -22,7 +22,7 @@ describe('Contact info page', () => { it('Navigate to "Võtke meiega ühendust"'
 		});
 	});
 
-	it('', () => {
+	it('Error message upon invalid email entry', () => {
 		cy.visit('/eraisik/et/vajad-abi');
 
 		cy.get("stateportal-contact-form").within(() => {
