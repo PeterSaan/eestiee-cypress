@@ -3,6 +3,7 @@
 describe('Search functionality', () => {
 	it('Search results for "Eesti hümn"', () => {
 		cy.visit('');
+		cy.contains('button', 'Ei nõustu').click();
 
 		cy
 			.get('div.search-input > input')
@@ -13,6 +14,7 @@ describe('Search functionality', () => {
 
 	it('Search for "Eesti hümn" redirects to correct page with appropriate info', () => {
 		cy.visit('');
+		cy.contains('button', 'Ei nõustu').click();
 
 		cy.get('div.search-input > input').type('Eesti hümn');
 

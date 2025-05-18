@@ -1,7 +1,10 @@
 /// <reference types="cypress" />
 
 describe("Load homepage and it's elements", () => {
-	beforeEach(() => cy.visit(''));
+	beforeEach(() => {
+		cy.visit('')
+		cy.contains('button', 'Ei nõustu').click();
+	});
 
 	it('The homepage loads successfully', () => cy.get('body').should('be.visible'));
 

@@ -1,7 +1,10 @@
 /// <reference types="cypress" />
 
 describe('"Services" page navigation', () => {
-	beforeEach(() => cy.visit(''));
+	beforeEach(() => {
+		cy.visit('')
+		cy.contains('button', 'Ei nõustu').click();
+	});
 
 	it('When clicking on "Tervis ja retseptid" an additional menu opens', () => {
 		cy.contains('Tervis ja retseptid').click();
